@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Builderz - Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Builderz</a>
+            <!-- Add navigation links here -->
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron">
+              <h1>Builderz</h1>
+              <p>We are a team of experienced builders who are passionate about creating high-quality homes and businesses. We offer a wide range of services, from new construction to renovations and repairs. Contact us today for a free consultation!</p>
+              <a href="#" class="btn btn-primary">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>About Us</h2>
+            <p>Builderz is a full-service construction company that has been in business for over 20 years. We specialize in new construction, renovations, and repairs for both residential and commercial properties. We are committed to providing our clients with the highest quality services and products at a competitive price.</p>
+          </div>
+        </div>
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Services</h2>
+            <ul class="list-group">
+              <li class="list-group-item">New Construction</li>
+              <li class="list-group-item">Renovations</li>
+              <li class="list-group-item">Repairs</li>
+              <li class="list-group-item">Commercial Construction</li>
+              <li class="list-group-item">Residential Construction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Team</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="https://placehold.it/200x200" class="img-thumbnail">
+                <h3>John Doe</h3>
+                <p>Owner</p>
+              </div>
+              <div class="col-md-4">
+                <img src="https://placehold.it/200x200" class="img-thumbnail">
+                <h3>Jane Doe</h3>
+                <p>Project Manager</p>
+              </div>
+              <div class="col-md-4">
+                <img src="https://placehold.it/200x200" class="img-thumbnail">
+                <h3>Mike Smith</h3>
+                <p>Carpenter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Projects</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="https://placehold.it/200x200" class="img-thumbnail">
+                <h3>Project 1</h3>
+                <p>This is a description of the project.</p>
+              </div>
+              <div class="col-md-4">
+                <img src="https://placehold.it/200x200" class="img-thumbnail">
+                <h3>Project 2</h3>
+                <p>This is a description of the project.</p>
+              </div>
+              <div class="col-md-4">
+                <img src="https://placehold.it/200x200" class="img-thumbnail">
+                <h3>Project 3</h3>
+                <p>This is a description of the project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Contact Us
+      
+
+    <!-- Home Section -->
+    <section id="home" class="py-5 text-center">
+        <div class="container">
+            <h1>Welcome to Builderz</h1>
+            <p>Your trusted partner in construction</p>
+            <!-- Call to Action buttons (Get a Quote, Learn More, etc.) -->
+        </div>
+    </section>
+
+
+</body>
+</html>
