@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        .this-layout {
+            /* Add your layout styles here */
+            padding: 40px;
+            height: 90vh;
+            background-color: #82888b;
+        }
+        h2{
+            position: centre;
+            background-color: rgb(37, 151, 232);
+        }
+    </style>
+</head>
+<body>
+    <h2>Ethnus Layout</h2>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <div class="container">
+            <!-- Left Column - Links -->
+            <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Signup</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Area with Ethnus Layout -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-rg-3">
+                <!-- You can add any content you want in the left column here -->
+                <div class="this-layout">
+                    <!-- Add Ethnus layout content here -->
+                    <p>This is </p>
+                </div>
+            </div>
+            <!-- Content Box -->
+            <div class="col-rg-9">
+                <!-- Your main content goes here -->
+                <p>Write your content here</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
