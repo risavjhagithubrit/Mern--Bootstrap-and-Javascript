@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <style>
+    .error{
+        color: red;
+    }
+    .label{
+        border: red;
+    }
+  </style>
+</head>
+<br>
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <span id="nameError" class="error">This field is required</span>
+    </div>
+    </form>
+</br>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <span id="emailError" class="error">A valid email address is required</span>
+    </div>
+    </form>
+</br>
+    <div>
+        <label for="website">website:</label>
+        <input type="url" id="website" name="website">
+        <span id="websiteError" class="error">A valid url is required</span>
+      </div>
+      </form>
+    </br>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <span id="messageError" class="error">This field is required</span>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+</br>
+  </form>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("message");
+
+    contactForm.addEventListener("submit", function (e) {
+      let isValid = true;
+
+      // Validate Name
+      if (nameInput.value.trim() === "") {
+        document.getElementById("nameError").style.display = "block";
+        isValid = false;
+      } else {
+        document.getElementById("nameError").style.display = "none";
+      }
+
+      // Validate Email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value)) {
+        document.getElementById("emailError").style.display = "block";
+        isValid = false;
+      } else {
+        document.getElementById("emailError").style.display = "none";
+      }
+
+      // Validate Message
+      if (messageInput.value.trim() === "") {
+        document.getElementById("messageError").style.display = "block";
+        isValid = false;
+      } else {
+        document.getElementById("messageError").style.display = "none";
+      }
+
+      if (!isValid) {
+        e.preventDefault(); // Prevent form submission if there are errors
+      }
+    });
+  </script>
+</body>
+</html>
