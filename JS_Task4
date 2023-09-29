@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title>Get date and time in JavaScript.</title>
+</head>
+<body>
+   <h2>Get date and time using JavaScript.</h2>
+   <h4>Output after using the basic methods of the Date() class.</h4>
+   <div id="date"> </div>
+   <div id="time"> </div>
+   <script type="text/javascript">
+      let date = document.getElementById("date");
+      let time = document.getElementById("time");
+      // creating the date object and getting the date and time
+      let newDate = new Date();
+      let year = newDate.getFullYear();
+      let month = newDate.getMonth();
+      let todaySDate = newDate.getDate();
+      let hours = newDate.getHours();
+      let minutes = newDate.getMinutes();
+      let seconds = newDate.getSeconds();
+      date.innerHTML = " " + todaySDate + "/ " + month + "/ " + year;
+      time.innerHTML = hours + ": " + minutes + ": " + seconds;
+   </script>
+</body>
+</html>
