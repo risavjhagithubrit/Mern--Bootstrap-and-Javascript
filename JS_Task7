@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Control</title>
+    <style>
+        #square {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(43, 0, 255);
+            position: relative;
+            animation: move 2s linear infinite;
+        }
+
+        @keyframes move {
+            0% { left: 0; }
+            100% { left: 80%; }
+        }
+    </style>
+</head>
+<body>
+    <div id="square"></div>
+    <button id="startBtn">Start Animation</button>
+    <button id="stopBtn">Stop Animation</button>
+
+    <script>
+        const square = document.getElementById("square");
+        const startBtn = document.getElementById("startBtn");
+        const stopBtn = document.getElementById("stopBtn");
+        let animationRunning = false;
+
+        startBtn.addEventListener("click", () => {
+            if (!animationRunning) {
+                square.style.animationPlayState = "running";
+                animationRunning = true;
+            }
+        });
+
+        stopBtn.addEventListener("click", () => {
+            if (animationRunning) {
+                square.style.animationPlayState = "paused";
+                animationRunning = false;
+            }
+        });
+    </script>
+</body>
+</html>
