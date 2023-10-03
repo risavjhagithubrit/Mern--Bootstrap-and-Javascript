@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .error{
+            color: red;
+        }
+      .container{
+        background-color: rgb(208, 201, 71);
+      }
+    </style>
+</head>
+<body>
+    <form>
+        <center>
+          <br>
+              <div class="container">
+              <h1>Registration form </h1>
+              <form name="registration" class="registartion" onsubmit="return formValidation()">
+
+              <!-- Single line input -->
+              <tr>
+                  <td><label for="fn">First Name: </label></td>
+                  <td><input type="text" name="fn"/></td>
+                  <span id="firstnameError" class="error">POOR</span>
+              </tr><br><br>
+              <tr>
+                <td><label for="ln">Last name: </label></td>
+                <td><input type="text" name="ln"/></td>
+                <span id="lastnameError" class="error">POOR</span>
+            </tr><br><br>
+              <tr>
+                <td><label for="em">Email: </label></td>
+                <td><input type="text" name="em"/></td>
+                 <span id="emailError" class="error">POOR</span>
+              </tr><br><br>
+              <tr>
+                <td><label for="pw">Password: </label></td>
+                <td><input type="number" name="pw"/></td>
+                 <span id="emailError" class="error">POOR</span>
+            </tr><br><br>
+             <tr>
+                <td><label for="rp">Re-enter Password: </label></td>
+                <td><input type="number" name="rp"/></td>
+                 <span id="emailError" class="error">POOR OR MISMATCH</span>
+            </tr><br><br>
+            <!-- Radio -->
+              <tr>
+                  <td><label>Gender: </label></td>
+                  <td>
+                      <input type="radio" name="gender" />Male
+                      <input type="radio" name="gender" />Female
+                  </td>
+              </tr> <br><br>
+              <tr>
+                <td><label for="age">Age: </label></td>
+                <td><input type="number" name="age"/></td>
+                 <span id="ageError" class="error">POOR</span>
+            </tr><br><br>
+            <tr>
+                <td><label for="pn">Phone Number: </label></td>
+                <td><input type="number" name="pm"/></td>
+                 <span id="phonenumberError" class="error">POOR</span>
+            </tr><br><br>
+            <tr>
+                <td><label>Address</label></td>
+                <td><textarea></textarea></td>
+                 <span id="addressError" class="error">POOR</span>
+            </tr><br><br>
+            <tr>
+                <td><label for="st">State: </label></td>
+                <td><input type="text" name="st"/></td>
+                 <span id="stateError" class="error">POOR</span>
+            </tr><br><br>
+            <tr>
+                <td><label>Country</label></td>
+                <td>
+                    <select>
+                        <option>Choose your country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                    </select>
+                </td>
+            </tr><br><br>
+            <tr>
+                <td><label> Languages known </label></td>
+                <td>
+                    <input type="checkbox" />English
+                    <input type="checkbox" />Kannada
+                    <input type="checkbox" />Hindi
+                    <input type="checkbox" />Telugu
+                </td>
+            </tr><br><br>
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">Hereby I declare all the details are given true.</label><br><br>
+            <label for="login">Log in to Ethnus Website.</label><br><br>
+              <input type="submit" class="submit" value="Register">
+            </table>
+            </center>
+        </form>
+</body>
+</html>
